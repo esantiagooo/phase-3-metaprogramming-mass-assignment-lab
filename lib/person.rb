@@ -5,6 +5,7 @@ class Person
   # your code here
 
    def initialize(attributes)
+    # instead of passing each individual attribute in the initialize method we can pass an arguement 
     attributes.each do |key, value|
       self.send("#{key}=", value)
     end 
